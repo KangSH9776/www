@@ -73,7 +73,7 @@ body {
     font-family: 'Noto Sans Regular', sans-serif;
     font-size: 1.4rem;
 }
-input, textarea, select, option{
+input, textarea, select, option, button{
     font-family: inherit;
     font-size: inherit;
 }
@@ -364,16 +364,65 @@ a {
     border: 0;
     padding: 0 0 10px 0;
     margin: 0;
-
+    position: relative;
+    border-bottom: 1px sorlid #aaa;
+    padding-bottom: 10px;
 }
 
+.user-pw{
+    margin-top: 6px;
+}
 
+.login-form label{
+    width: 4em;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.login-form input{
+    box-sizing: border-box;
+    width: 95PX;
+    height: 22PX;
+    border: 1PX sorlid #aaa;
+    padding: 1px 1px 1px 5px;
+}
+
+.btn-login{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    background: hsla(0, 100%, 70%, 1);
+    border-radius: 3px;
+    font-size: 1.3rem;
+}
 
 .member {
     padding: 0 10px 10px 10px;
     background: #fff;
     border-radius: 0 0 5px 5px;
     list-style-type: none;
+}
+
+.member::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.join{
+    background:yellow;
+    float: left;
+}
+
+.find{
+    background: pink;
+    float: right;
+
 }
 
 .slogan {
