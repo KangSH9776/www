@@ -425,6 +425,13 @@ a {
 
 }
 
+.search {
+    background: radial-gradient(circle at right top, #e5892d, #e0652c);
+    width :0;
+    height: 0;
+}
+
+
 .slogan {
     height: 10vh;
 }
